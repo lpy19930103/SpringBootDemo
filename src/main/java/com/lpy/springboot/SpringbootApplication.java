@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@MapperScan("com.lpy.springboot.mapper")
 public class SpringbootApplication {
 
     public static void main(String[] args) {

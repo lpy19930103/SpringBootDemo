@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> findAllUser() {
-        System.out.println(userMapper);
+        System.out.println("userMapper = " + userMapper);
         return null;
     }
 }

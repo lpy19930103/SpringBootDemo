@@ -1,12 +1,9 @@
 package com.lpy.springboot.mapper;
 
 import com.lpy.springboot.model.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-@Mapper
 public interface UserMapper {
 
     int deleteByPrimaryKey(Integer id);
@@ -21,6 +18,5 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
 
-    @Select("SELECT * FROM `user`")
     List<User> findAllUser();
 }
