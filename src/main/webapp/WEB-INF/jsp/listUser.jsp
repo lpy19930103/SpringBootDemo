@@ -24,10 +24,10 @@
     <c:forEach items="${listUser}" var="u" varStatus="s">
         <tr>
             <td>
-                    ${s.id}
+                    ${u.id}
             </td>
             <td>
-                    ${s.userName}
+                    ${u.username}
             </td>
         </tr>
     </c:forEach>

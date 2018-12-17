@@ -10,11 +10,12 @@ spring:
     username: root
     password: 123
     type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     max-idle: 1000
     max-wait: 10000
     min-idle: 100
     initial-size: 100
+
 
   jpa:
     hibernate:
